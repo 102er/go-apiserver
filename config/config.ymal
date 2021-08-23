@@ -1,0 +1,10 @@
+Version: "1.0.1"
+#运行环境 dev product stage
+Env: "dev"
+Log:
+  FileName: "/tmp/process.log"
+  Level: "debug" # reference zap logs level
+  MaxSize: 20
+  MaxAge: 7
+  MaxBackups: 10
+  PrintConsole: true
