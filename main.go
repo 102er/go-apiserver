@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"github.com/102er/go-apiserver/apiserver/route"
 	"github.com/102er/go-apiserver/internal/pkg/configer"
 	"github.com/102er/go-apiserver/internal/pkg/logs"
 	"github.com/gin-gonic/gin"
@@ -30,6 +31,7 @@ func main() {
 
 	r := gin.New()
 	r.Use(logs.GinLoggerMiddleware(), logs.GinRecoveryMiddleware(true))
+	route.RegisterRoutes(r)
 	if err := r.Run(":80"); err != nil {
 		log.Panic("gin server run failed,error:", err)
 	}
