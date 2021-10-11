@@ -178,7 +178,7 @@ func (e *GoError) SetRetryable() Error {
 	return e
 }
 
-// AppendCause will append the error cause to the err string
+// AppendCause will append the error cause to the error string
 func (e *GoError) AppendCause() Error {
 	e.appendCause = true
 	return e
