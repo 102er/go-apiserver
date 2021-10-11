@@ -87,7 +87,7 @@ func CreateToken(accessToken string, userInfo domain.User) (token string, err er
 			ExpiresAt: now.Add(30 * 24 * time.Hour).Unix(),
 			Id:        jwtId,
 			IssuedAt:  now.Unix(),
-			Issuer:    "ops-process-server",
+			Issuer:    "api-server",
 			Subject:   account,
 		},
 	}
