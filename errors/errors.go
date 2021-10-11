@@ -197,7 +197,7 @@ func localize(id ErrCode, lang string, data map[string]interface{}) string {
 	if lang == "zh" || lang == "zh_CN" {
 		l = language.Chinese
 	}
-	template := GetTemplates(lang, id)
+	template := Templates(lang, id)
 	bundle := i18n.NewBundle(l)
 	localizer := i18n.NewLocalizer(bundle, l.String())
 	return localizer.MustLocalize(&i18n.LocalizeConfig{
