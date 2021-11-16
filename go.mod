@@ -6,6 +6,7 @@ require (
 	github.com/coreos/go-oidc v2.2.1+incompatible
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gin-gonic/gin v1.7.4
+	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/pquerna/cachecontrol v0.1.0 // indirect
 	github.com/spf13/viper v1.8.1
