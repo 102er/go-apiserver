@@ -3,8 +3,7 @@ package main
 import (
 	"flag"
 	"github.com/102er/go-apiserver/apiserver/route"
-	"github.com/102er/go-apiserver/internal/pkg/configer"
-	"github.com/102er/go-apiserver/internal/pkg/logs"
+	"github.com/102er/go-apiserver/pkg/logs"
 	"github.com/gin-gonic/gin"
 	"log"
 )
